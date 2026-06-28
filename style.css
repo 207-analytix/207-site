@@ -1,1 +1,134 @@
-/* loaded from sandbox */
+/* ============================================
+   207 ANALYTIX — Crafted UI
+   Linear × Vercel × Stripe
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- THEME TOKENS ---- */
+
+:root {
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --accent: #2563EB;
+  --accent-hover: #1d4ed8;
+  --accent-muted: rgba(37, 99, 235, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --header-h: 64px;
+}
+
+/* Light (explicit) */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #FAFAFA;
+  --bg-elevated: #FFFFFF;
+  --bg-subtle: #F4F4F5;
+  --bg-inset: #ECECEF;
+  --text: #09090B;
+  --text-secondary: #52525B;
+  --text-tertiary: #A1A1AA;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.04);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04);
+  --shadow-lg: 0 24px 80px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
+  --header-bg: rgba(250, 250, 250, 0.72);
+  --hero-gradient: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #2563EB 100%);
+  --aurora-1: rgba(37, 99, 235, 0.08);
+  --aurora-2: rgba(124, 58, 237, 0.06);
+  --grain-opacity: 0.025;
+  --preview-bg: #FFFFFF;
+  --preview-chrome: #F4F4F5;
+  --selection-bg: rgba(37, 99, 235, 0.2);
+  --selection-text: #09090B;
+}
+
+/* Dark (explicit) */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #09090B;
+  --bg-elevated: #111113;
+  --bg-subtle: #18181B;
+  --bg-inset: #0C0C0E;
+  --text: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #52525B;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.06);
+  --shadow-md: 0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
+  --shadow-lg: 0 32px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+  --header-bg: rgba(9, 9, 11, 0.72);
+  --hero-gradient: linear-gradient(135deg, #60A5FA 0%, #A78BFA 45%, #38BDF8 100%);
+  --aurora-1: rgba(37, 99, 235, 0.15);
+  --aurora-2: rgba(124, 58, 237, 0.1);
+  --grain-opacity: 0.04;
+  --preview-bg: #111113;
+  --preview-chrome: #18181B;
+  --selection-bg: rgba(37, 99, 235, 0.35);
+  --selection-text: #FAFAFA;
+}
+
+/* System — light */
+@media (prefers-color-scheme: light) {
+  [data-theme="system"] {
+    color-scheme: light;
+    --bg: #FAFAFA;
+    --bg-elevated: #FFFFFF;
+    --bg-subtle: #F4F4F5;
+    --bg-inset: #ECECEF;
+    --text: #09090B;
+    --text-secondary: #52525B;
+    --text-tertiary: #A1A1AA;
+    --border: rgba(0, 0, 0, 0.08);
+    --border-strong: rgba(0, 0, 0, 0.14);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 0 0 1px rgba(0,0,0,0.04);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04);
+    --shadow-lg: 0 24px 80px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04);
+    --header-bg: rgba(250, 250, 250, 0.72);
+    --hero-gradient: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #2563EB 100%);
+    --aurora-1: rgba(37, 99, 235, 0.08);
+    --aurora-2: rgba(124, 58, 237, 0.06);
+    --grain-opacity: 0.025;
+    --preview-bg: #FFFFFF;
+    --preview-chrome: #F4F4F5;
+    --selection-bg: rgba(37, 99, 235, 0.2);
+    --selection-text: #09090B;
+  }
+}
+
+/* System — dark */
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] {
+    color-scheme: dark;
+    --bg: #09090B;
+    --bg-elevated: #111113;
+    --bg-subtle: #18181B;
+    --bg-inset: #0C0C0E;
+    --text: #FAFAFA;
+    --text-secondary: #A1A1AA;
+    --text-tertiary: #52525B;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.14);
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.06);
+    --shadow-md: 0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
+    --shadow-lg: 0 32px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+    --header-bg: rgba(9, 9, 11, 0.72);
+    --hero-gradient: linear-gradient(135deg, #60A5FA 0%, #A78BFA 45%, #38BDF8 100%);
+    --aurora-1: rgba(37, 99, 235, 0.15);
+    --aurora-2: rgba(124, 58, 237, 0.1);
+    --grain-opacity: 0.04;
+    --preview-bg: #111113;
+    --preview-chrome: #18181B;
+    --selection-bg: rgba(37, 99, 235, 0.35);
+    --selection-text: #FAFAFA;
+  }
+}
