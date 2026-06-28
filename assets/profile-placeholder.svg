@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     role="img" aria-label="Representative — no photo available">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="141%" y2="141%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="50%"  stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <clipPath id="cc"><circle cx="100" cy="100" r="99"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="#F4F4F5"/>
+  <!-- Accent wash -->
+  <circle cx="100" cy="100" r="100" fill="url(#g1)" opacity="0.09" clip-path="url(#cc)"/>
+  <!-- Shoulder silhouette -->
+  <ellipse cx="100" cy="194" rx="62" ry="36" fill="url(#g1)" opacity="0.16" clip-path="url(#cc)"/>
+  <!-- Head silhouette -->
+  <circle cx="100" cy="84" r="35" fill="url(#g1)" opacity="0.2" clip-path="url(#cc)"/>
+  <!-- AS initials -->
+  <text x="100" y="96"
+    font-family="Instrument Sans, system-ui, sans-serif"
+    font-size="28" font-weight="700" letter-spacing="-0.04em"
+    text-anchor="middle" dominant-baseline="middle"
+    fill="url(#g1)">AS</text>
+  <!-- Border ring -->
+  <circle cx="100" cy="100" r="98" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+</svg>
