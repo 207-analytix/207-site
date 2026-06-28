@@ -1,1 +1,357 @@
-<!-- index.html loaded from sandbox -->
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>207 Analytix</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') || 'system';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="header__shell">
+      <div class="header__inner">
+        <a href="index.html" class="logo-block" aria-label="207 Analytix home">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="logo-text">
+            <span class="logo">207 <span>Analytix</span></span>
+            <span class="logo__tagline">tech studio · Portland, ME</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#products" class="nav__link">Products</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        </nav>
+        <div class="header__actions">
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html" class="nav__link">207 Analytix</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#products" class="nav__link">Products</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__aurora" aria-hidden="true"></div>
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <p class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            Portland, Maine
+          </p>
+          <h1 class="hero__headline">
+            Operations-first<br />
+            <em class="hero__em">tech studio</em>.
+          </h1>
+          <p class="hero__sub">207 Analytix builds software and AI for businesses that run on hard work. Through Alexandria, our product arm, we ship modular AI for small businesses — plus custom builds and strategy when you need more.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">
+              Work with us
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="alexandria.html" class="btn btn--ghost">See Alexandria</a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="preview-card">
+            <div class="preview-card__chrome">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="preview-card__body">
+              <div class="preview-stat">
+                <span class="preview-stat__label">Wasted runs eliminated</span>
+                <span class="preview-stat__value">—</span>
+              </div>
+              <div class="preview-bar-group">
+                <div class="preview-bar" style="--w:82%"><span>Field ops</span><b>82%</b></div>
+                <div class="preview-bar" style="--w:67%"><span>Property mgmt</span><b>67%</b></div>
+                <div class="preview-bar" style="--w:91%"><span>Triage accuracy</span><b>91%</b></div>
+              </div>
+              <p class="preview-caption">Alexandria · early access</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__index">01</p>
+        <h2 class="section__title">About</h2>
+        <p class="section__lead">207 Analytix is a tech studio and consulting company. Through <strong>Alexandria</strong>, our product arm, we design and ship modular AI for small businesses — plus custom builds and strategy when you need more.</p>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 7v6l8 5 8-5V7L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Consulting &amp; strategy</h3>
+            <p>We map operational friction, scope what to build, and help you decide what to buy vs. what to ship custom — before anyone writes code.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 8h8M6 12h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Custom development</h3>
+            <p>Web apps, integrations, and internal tools built for how your team actually works — not how a SaaS vendor thinks you should.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Alexandria products</h3>
+            <p>Modular AI applications for small businesses — high-end, tech-forward, each shipped to its own domain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="products">
+      <div class="container">
+        <p class="section__index">02</p>
+        <h2 class="section__title">Alexandria</h2>
+        <p class="section__lead">Our product studio — modular AI built for operational friction, not buzzwords.</p>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card__header">
+              <span class="product-tag">Field ops</span>
+              <span class="product-badge product-badge--soon">Early access</span>
+            </div>
+            <h3 class="product-card__name">Foreman</h3>
+            <p class="product-card__desc">Stop wasted material runs. Know what you need before anyone leaves the shop.</p>
+            <a href="alexandria.html" class="product__link" data-product="foreman">Learn more →</a>
+          </div>
+          <div class="product-card">
+            <div class="product-card__header">
+              <span class="product-tag">Property mgmt</span>
+              <span class="product-badge product-badge--soon">Early access</span>
+            </div>
+            <h3 class="product-card__name">Sentinel</h3>
+            <p class="product-card__desc">Autonomous triage catches problems early — before they become emergencies.</p>
+            <a href="alexandria.html" class="product__link" data-product="sentinel">Learn more →</a>
+          </div>
+          <div class="product-card product-card--full">
+            <div class="product-card__header">
+              <span class="product-tag">All verticals</span>
+            </div>
+            <h3 class="product-card__name">Documentation layer</h3>
+            <p class="product-card__desc">Every interaction logged. Protect your business from liability disputes down the road.</p>
+            <a href="alexandria.html" class="product__link">Learn more →</a>
+          </div>
+        </div>
+        <div class="section__cta">
+          <a href="alexandria.html" class="btn btn--ghost">Explore Alexandria →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section__index">03</p>
+        <h2 class="section__title">How we work</h2>
+        <p class="section__lead">Alexandria ships AI as modular, plug-and-play blocks — pick the vertical that fits, deploy fast, expand when you're ready. No six-figure custom build. No bloated platform you won't use.</p>
+        <ol class="framework-steps">
+          <li class="framework-step">
+            <span class="framework-step__num">01</span>
+            <div>
+              <h3>Diagnose</h3>
+              <p>Field ops or property management.</p>
+            </div>
+          </li>
+          <li class="framework-step">
+            <span class="framework-step__num">02</span>
+            <div>
+              <h3>Deploy</h3>
+              <p>Plug in. Live in days, not months.</p>
+            </div>
+          </li>
+          <li class="framework-step">
+            <span class="framework-step__num">03</span>
+            <div>
+              <h3>Defend</h3>
+              <p>Fewer emergencies. Clear paper trail.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="module-grid">
+          <div class="module-card">
+            <p class="module-card__eyebrow">Field ops</p>
+            <h3 class="module-card__name">Foreman</h3>
+            <p class="module-card__desc">Voice and text triage for field techs — diagnose the job and auto-build your tool and material list before the truck rolls.</p>
+            <ul class="module-card__tags">
+              <li>Voice input</li>
+              <li>Material list</li>
+              <li>Job history</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <p class="module-card__eyebrow">Property management</p>
+            <h3 class="module-card__name">Sentinel</h3>
+            <p class="module-card__desc">Tenants get a diagnostic chat agent; you get an unalterable care history that insulates you when disputes arise.</p>
+            <ul class="module-card__tags">
+              <li>Tenant chat</li>
+              <li>Care history · immutable</li>
+              <li>Dispute shield</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="approach">
+      <div class="container">
+        <p class="section__index">04</p>
+        <h2 class="section__title">Our approach</h2>
+        <p class="section__lead">We stay close to the operational problem — wasted trips, missed triage, legal gaps — and ship software that eliminates it. Products get their own home; this site is the studio behind them.</p>
+        <div class="approach-grid">
+          <div class="approach-card">
+            <h3>Start with the problem</h3>
+            <p>We learn your ops, find the friction, and scope the smallest thing that moves the needle.</p>
+          </div>
+          <div class="approach-card">
+            <h3>Ship the right thing</h3>
+            <p>Custom work or a modular Alexandria product — modular blocks, no six-figure platform tax.</p>
+          </div>
+          <div class="approach-card">
+            <h3>You own it</h3>
+            <p>Live on your timeline. Products ship to their own domain; custom work stays yours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact__card">
+          <div class="contact__glow" aria-hidden="true"></div>
+          <p class="section__index">05</p>
+          <h2 class="contact__title">Let's talk</h2>
+          <p class="contact__sub">Consulting, custom build, or an Alexandria product — tell us what you're working on. We respond within 24 hours.</p>
+          <form id="contactForm" name="contact" class="contact-form" netlify netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="bot-field" style="display:none" aria-hidden="true" />
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="contact-form__field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@company.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="contact-form__field">
+              <label for="cf-interest">What are you working on?</label>
+              <select id="cf-interest" name="interest">
+                <option value="consulting">Consulting &amp; strategy</option>
+                <option value="custom_dev">Custom development</option>
+                <option value="alexandria">Alexandria product</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="contact-form__field">
+              <label for="cf-message">Tell us more</label>
+              <textarea id="cf-message" name="message" rows="4" placeholder="What problem are you trying to solve?" required></textarea>
+            </div>
+            <div class="contact-form__footer">
+              <button type="submit" class="btn btn--primary btn--lg">
+                Send message
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </div>
+          </form>
+          <p class="contact__alt">Or email us directly: <a href="mailto:hello@207analytix.com">hello@207analytix.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="logo">207 <span>Analytix</span></span>
+          <span class="footer__copy">© 2026 207 Analytix · Tech studio · Portland, ME</span>
+          <div class="footer__links">
+            <a href="alexandria.html">Alexandria</a>
+          </div>
+        </div>
+        <div class="footer__socials">
+          <a href="#" aria-label="LinkedIn" class="footer__icon" data-social="linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.024-3.037-1.85-3.037-1.851 0-2.135 1.445-2.135 2.939v5.667H9.99V9h3.115v1.481h.044c.434-.823 1.493-1.69 3.073-1.69 3.288 0 3.894 2.164 3.894 4.979v6.682zM5.337 7.433a1.81 1.81 0 1 1 0-3.62 1.81 1.81 0 0 1 0 3.62zM6.93 20.452H3.74V9h3.19v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="footer__icon" data-social="youtube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="footer__icon" data-social="twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="theme-bar" role="group" aria-label="Color theme">
+        <button class="theme-bar__btn" data-theme-pick="light" aria-pressed="false">Light</button>
+        <button class="theme-bar__btn" data-theme-pick="dark" aria-pressed="false">Dark</button>
+        <button class="theme-bar__btn" data-theme-pick="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      var status = document.getElementById('formStatus');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+          .then(function (r) {
+            if (r.ok) {
+              status.textContent = "Thanks — we'll be in touch within 24 hours.";
+              status.className = 'form-status form-status--success';
+              form.reset();
+            } else {
+              throw new Error('Network response was not ok');
+            }
+          })
+          .catch(function () {
+            status.textContent = 'Something went wrong. Please email hello@207analytix.com directly.';
+            status.className = 'form-status form-status--error';
+          })
+          .finally(function () {
+            btn.disabled = false;
+            btn.innerHTML = 'Send message <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
