@@ -1,2 +1,6 @@
-# GitHub Pages
+# GitHub Pages config
+# 'theme: null' keeps Jekyll from applying any default theme.
+# The url below is used by GitHub Pages for absolute links.
 theme: null
+url: "https://207-analytix.github.io"
+baseurl: "/207-site"

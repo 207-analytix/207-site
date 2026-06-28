@@ -1,0 +1,45 @@
+# ─────────────────────────────────────────────────────────────────
+# GitHub Pages deployment workflow
+# Deploys the static site on every push to main.
+# To switch to Netlify/Vercel: disable this workflow (delete or
+# comment out the `on:` block) and push — the other platform's
+# config (netlify.toml / vercel.json) takes over automatically.
+# ─────────────────────────────────────────────────────────────────
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # allow manual trigger from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the entire repo root as the site
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
